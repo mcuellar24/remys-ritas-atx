@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remy's Ritas ATX — Frozen Margarita Machine Rentals, Austin TX</title>
+  <meta name="description" content="Austin's resort-style frozen margarita machine rental. Every occasion deserves a rita. Weddings, parties, graduations, and more. Call (512) 791-0990." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Pacifico&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Remy's <span>Ritas</span></div>
+    <div class="nav-right">
+      <a class="nav-lnk" href="#pourlist">The pour list</a>
+      <a class="nav-lnk" href="#packages">Packages</a>
+      <a href="tel:5127910990" class="nav-phone">(512) 791-0990</a>
+      <a href="#book" class="nav-book">Book now</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-sun"></div>
+    <div class="hero-dots"></div>
+    <div class="hero-arch"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Austin's resort-style margarita machine rental</div>
+      <div class="hero-title">Remy's <em>Ritas</em></div>
+      <div class="hero-sub">Every occasion deserves a rita.</div>
+      <div class="hero-ctas">
+        <a href="#book" class="btn-gold">Get a free quote</a>
+        <a href="#pourlist" class="btn-ghost">See the pour list</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <div class="promo">
+    <div class="promo-icon">🎊</div>
+    <div class="promo-body">
+      <div class="promo-hl">Grand opening, 20% off all July bookings</div>
+      <div class="promo-sub">Use code <strong>FIRSTRITA</strong> at checkout. Limited slots available.</div>
+    </div>
+    <a href="#book" class="promo-cta">Claim deal</a>
+  </div>
+
+  <div class="divider"><span>🌴</span></div>
+
+  <!-- THE POUR LIST -->
+  <section id="pourlist">
+    <div class="sec-head">
+      <div class="sec-label">The pour list</div>
+      <div class="sec-title">Eight drinks worth<br>showing up for.</div>
+      <div class="sec-sub">Pick up to 2 flavors per machine. Swirl them for a two-tone pour that'll be the talk of the party. Hover any drink to see what it's about.</div>
+    </div>
+    <div class="pour-grid" id="pourGrid">
+      <!-- Injected by assets/drinks.js -->
+    </div>
+    <div class="how-strip">
+      <strong>How it works:</strong> Remy delivers the machine, mixes, and setup. You supply the tequila or rum and we'll tell you exactly how much. Pick up to 2 flavors per machine, or mix and swirl them for a two-tone pour that'll blow people's minds.
+    </div>
+  </section>
+
+  <div class="divider"><span>🌺</span></div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="testi-dots"></div>
+    <div class="testi-sun"></div>
+    <div class="testi-head">
+      <div class="testi-label">What people are saying</div>
+      <div class="testi-title">The reviews are in</div>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">"Remy showed up on time, set everything up, and the mango tajín was gone in the first hour. Best decision we made for the whole weekend."</div>
+        <div class="testi-author"><div class="testi-avatar">JL</div><div><div class="testi-name">Jessica L.</div><div class="testi-event">Wedding, Dripping Springs</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">"Our whole backyard smelled like a beach bar for three hours. The watermelon was a huge hit with the kids and the spicy lime kept the adults very happy."</div>
+        <div class="testi-author"><div class="testi-avatar">MR</div><div><div class="testi-name">Marcus R.</div><div class="testi-event">Summer party, South Austin</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-quote">"My dad retired after 34 years and we wanted it to feel like a real celebration. Two machines running all afternoon. People are still talking about it."</div>
+        <div class="testi-author"><div class="testi-avatar">AL</div><div><div class="testi-name">Ana L.</div><div class="testi-event">Retirement party, Round Rock</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span>🎊</span></div>
+
+  <!-- PACKAGES -->
+  <section id="packages">
+    <div class="sec-head">
+      <div class="sec-label">What's included</div>
+      <div class="sec-title">Packages</div>
+    </div>
+    <div class="pkg-grid">
+      <div class="pkg" data-i="0" onclick="pickPkg(this)">
+        <div class="pkg-ico">🌮</div>
+        <div class="pkg-name">The Starter</div>
+        <div class="pkg-detail">1 machine, 2 flavors<br>up to 50 guests, 4 hrs<br>delivery and setup</div>
+        <div class="pkg-was">Reg. $350</div>
+        <div class="pkg-price">$299 <small>/ event</small></div>
+      </div>
+      <div class="pkg" data-i="1" onclick="pickPkg(this)">
+        <div class="pkg-badge">Most popular</div>
+        <div class="pkg-ico">🌴</div>
+        <div class="pkg-name">The Party</div>
+        <div class="pkg-detail">2 machines, 4 flavors<br>up to 150 guests, 6 hrs<br>delivery and setup</div>
+        <div class="pkg-was">Reg. $650</div>
+        <div class="pkg-price">$549 <small>/ event</small></div>
+      </div>
+      <div class="pkg" data-i="2" onclick="pickPkg(this)">
+        <div class="pkg-send-badge">The big one</div>
+        <div class="pkg-ico">🎉</div>
+        <div class="pkg-name">The Full Send</div>
+        <div class="pkg-detail">3 machines, all flavors<br>full weekend, unlimited refills<br>dedicated coordinator</div>
+        <div class="pkg-was">Reg. $1,250</div>
+        <div class="pkg-price">$999 <small>/ weekend</small></div>
+      </div>
+      <div class="pkg" data-i="3" onclick="pickPkg(this)">
+        <div class="pkg-ico">✨</div>
+        <div class="pkg-name">Build your own</div>
+        <div class="pkg-detail">Custom machines, hours,<br>and flavors for large<br>or unique events</div>
+        <div class="pkg-price" style="font-size:16px">Let's talk</div>
+      </div>
+    </div>
+    <p class="pkg-note">All packages include delivery, setup, and pickup within Austin city limits. Alcohol not included.</p>
+  </section>
+
+  <div class="divider"><span>🌴</span></div>
+
+  <!-- OCCASIONS -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-label">Who we serve</div>
+      <div class="sec-title">Every occasion<br>deserves a rita</div>
+    </div>
+    <div class="occ-grid">
+      <div class="occ occ-wedding"><div class="occ-ico">💍</div><div><div class="occ-title">Weddings and receptions</div><div class="occ-desc">Rehearsal through the reception. We handle the ritas so you handle the vows.</div></div></div>
+      <div class="occ occ-college"><div class="occ-ico">🎓</div><div><div class="occ-title">College parties</div><div class="occ-desc">Fall semester, rush events, house parties. Remy's keeps the crowd happy all year.</div></div></div>
+      <div class="occ occ-retire"><div class="occ-ico">🎊</div><div><div class="occ-title">Retirement parties</div><div class="occ-desc">They worked hard. They've earned a frozen rita and their feet in the sand.</div></div></div>
+      <div class="occ occ-summer"><div class="occ-ico">🏡</div><div><div class="occ-title">Backyard summer</div><div class="occ-desc">Pool parties, July 4th, neighborhood BBQs. Any excuse to fire up the machine.</div></div></div>
+    </div>
+  </section>
+
+  <div class="divider"><span>🌺</span></div>
+
+  <!-- BOOKING FORM -->
+  <section id="book">
+    <div class="sec-head">
+      <div class="sec-label">Let's make it happen</div>
+      <div class="sec-title">Get a free quote</div>
+      <div class="sec-sub">Tell Remy about your event and we'll get back to you within 24 hours. Or call us at <a href="tel:5127910990">(512) 791-0990</a>.</div>
+    </div>
+    <div id="okBox" class="ok-box"><p>🎉 Gracias! Remy will reach out within 24 hours. Your fiesta is locked in.</p></div>
+    <div id="errBox" class="err-box">Something went wrong. Please call (512) 791-0990 or email bookings@remysritasatx.com directly.</div>
+    <div class="book-wrap">
+      <div class="flbl">What's the occasion?</div>
+      <div class="ev-grid">
+        <button class="ev-btn on" onclick="pickEv(this)"><span class="ev-ico">💍</span>Wedding or reception</button>
+        <button class="ev-btn" onclick="pickEv(this)"><span class="ev-ico">🎓</span>Graduation or college</button>
+        <button class="ev-btn" onclick="pickEv(this)"><span class="ev-ico">🏡</span>Summer party</button>
+        <button class="ev-btn" onclick="pickEv(this)"><span class="ev-ico">🎊</span>Retirement party</button>
+      </div>
+      <div class="fg2">
+        <div class="fg"><label class="flbl">Your name</label><input type="text" id="fn" placeholder="Alex Ramos" /></div>
+        <div class="fg"><label class="flbl">Email</label><input type="email" id="fe" placeholder="alex@email.com" /></div>
+        <div class="fg"><label class="flbl">Phone</label><input type="tel" id="fp" placeholder="(512) 555-0100" /></div>
+        <div class="fg"><label class="flbl">Event date</label><input type="date" id="fd" /></div>
+        <div class="fg"><label class="flbl">Expected guests</label>
+          <select id="fgu"><option>Under 50</option><option>50 to 100</option><option>100 to 200</option><option>200+</option></select>
+        </div>
+        <div class="fg"><label class="flbl">Package</label>
+          <select id="fpk"><option>The Starter ($299)</option><option>The Party ($549)</option><option>The Full Send ($999)</option><option>Build your own</option></select>
+        </div>
+      </div>
+      <div class="fg" style="margin-bottom:10px"><label class="flbl">Promo code</label><input type="text" id="fpc" placeholder="FIRSTRITA for 20% off July bookings" /></div>
+      <div class="fg" style="margin-bottom:14px"><label class="flbl">Anything else?</label><textarea id="fnotes" placeholder="Venue, flavor picks, special requests..."></textarea></div>
+      <button class="sub-btn" id="subBtn" onclick="doSubmit()">Send my quote request</button>
+      <p class="status-note" id="statusNote"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="foot-logo">Remy's <span>Ritas</span></div>
+    <div class="foot-contact">
+      <a href="tel:5127910990">(512) 791-0990</a>
+      <a href="mailto:bookings@remysritasatx.com">bookings@remysritasatx.com</a>
+      <span>remysritasatx.com · Austin, TX</span>
+    </div>
+    <div class="foot-badge">ATX owned and operated</div>
+  </footer>
+
+  <script src="assets/drinks.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
