@@ -3,7 +3,7 @@
 // SETUP: Paste your Google Apps Script web app URL below.
 // See backend/google-apps-script.js for full setup instructions.
 //
-const APPS_SCRIPT_URL = "YOUR_APPS_SCRIPT_URL_HERE";
+const APPS_SCRIPT_URL = "https://script.google.com/a/macros/remysritasatx.com/s/AKfycbzGKJh5-f49CezjNtpo-94W9-V7Y1bQXhCeXAW6wZefKs-lU6h1iTJYGici2H8BLC8H/exec";
 
 // ── Package selector ──────────────────────────────────────────────────────
 function pickPkg(el) {
